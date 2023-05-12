@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:sms_read/utils/locator.dart';
 
-import 'core/permission_service.dart';
-import 'pages/chatScreen.dart';
+import '../core/permission_controller.dart';
+import 'chats_screen.dart';
 
-class Application extends StatefulWidget {
-  const Application({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
 
   @override
-  ApplicationState createState() => ApplicationState();
+  SplashScreenState createState() => SplashScreenState();
 }
 
-class ApplicationState extends State<Application> {
+class SplashScreenState extends State<SplashScreen> {
   bool permissionsGranted = false;
 
   @override
   void initState() {
     super.initState();
 
-    queryPermissions().then((_) {
+    locator.get<PermissionController>().getPermissions(context).then((_) {
       setState(() {
         permissionsGranted = true;
       });

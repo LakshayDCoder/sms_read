@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sms_read/core/phone_contacts_service.dart';
+import 'package:sms_read/utils/locator.dart';
 
-import 'app.dart';
+import 'pages/splash_screen.dart';
 
 void main() async {
   // WidgetsFlutterBinding.ensureInitialized();
-  // serviceLocatorInit();
+  setup();
   runApp(const SmsApp());
 }
 
@@ -20,7 +20,7 @@ class SmsApp extends StatelessWidget {
         primarySwatch: Colors.green,
       ),
       debugShowCheckedModeBanner: false,
-      home: const Application(),
+      home: const SplashScreen(),
     );
   }
 }

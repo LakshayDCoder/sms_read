@@ -1,12 +1,12 @@
 import 'package:contacts_service/contacts_service.dart';
 
-import '../constants.dart';
+import '../utils/constants.dart';
 
-class MyContact {
+class ContactModal {
   String displayName, givenName, middleName, familyName;
   List<String> phoneNumbers;
 
-  MyContact({
+  ContactModal({
     this.displayName = "",
     this.givenName = "",
     this.familyName = "",
@@ -14,7 +14,7 @@ class MyContact {
     this.phoneNumbers = const [],
   });
 
-  static MyContact convertContactToMyContact(Contact contact) {
+  static ContactModal convertContactToMyContact(Contact contact) {
     List<String> ph = [];
 
     // Get all the phone numbers from a contact
@@ -33,7 +33,7 @@ class MyContact {
     // To remove duplicates
     ph = ph.toSet().toList();
 
-    return MyContact(
+    return ContactModal(
       displayName: contact.displayName ?? "",
       givenName: contact.givenName ?? "",
       familyName: contact.familyName ?? "",
