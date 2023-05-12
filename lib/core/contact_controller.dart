@@ -7,6 +7,7 @@ import '../modals/contact_modal.dart';
 
 class ContactController {
   List<ContactModal> allContacts = [];
+
   Future<List<ContactModal>> getAllContacts() async {
     if (allContacts.isEmpty) {
       allContacts = await locator.get<ContactRepo>().getAllContacts();

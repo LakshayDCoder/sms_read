@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sms_read/pages/chat_screen_2.dart';
 import 'package:sms_read/utils/locator.dart';
 
 import '../core/permission_controller.dart';
-import 'chats_screen.dart';
+import 'chat_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -34,7 +33,7 @@ class SplashScreenState extends State<SplashScreen> {
         elevation: 0.7,
       ),
       body: permissionsGranted
-          ? const ChatScreen2()
+          ? const ChatScreen()
           : const Center(
               child: CircularProgressIndicator(),
             ),

@@ -6,14 +6,14 @@ import 'package:sms_read/utils/locator.dart';
 
 import '../utils/constants.dart';
 
-class ChatScreen2 extends StatefulWidget {
-  const ChatScreen2({super.key});
+class ChatScreen extends StatefulWidget {
+  const ChatScreen({super.key});
 
   @override
-  State<ChatScreen2> createState() => _ChatScreen2State();
+  State<ChatScreen> createState() => _ChatScreenState();
 }
 
-class _ChatScreen2State extends State<ChatScreen2> {
+class _ChatScreenState extends State<ChatScreen> {
   List<ChatRoomModal> rooms = [];
   bool loading = true;
 
