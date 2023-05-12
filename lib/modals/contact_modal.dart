@@ -7,7 +7,7 @@ class ContactModal {
   List<String> phoneNumbers;
 
   ContactModal({
-    this.displayName = "",
+    required this.displayName,
     this.givenName = "",
     this.familyName = "",
     this.middleName = "",

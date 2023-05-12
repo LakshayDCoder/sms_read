@@ -1,7 +1,6 @@
 import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:intl/intl.dart';
 import 'package:sms_read/core/chat_room_controller.dart';
 import 'package:sms_read/core/sms_controller.dart';
 import 'package:sms_read/utils/locator.dart';
@@ -9,6 +8,7 @@ import 'package:vibration/vibration.dart';
 
 import '../core/contact_controller.dart';
 import '../modals/sms_model.dart';
+import '../utils/constants.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -187,12 +187,5 @@ class ChatScreenState extends State<ChatScreen> {
                     child: Text("No Messages Found"),
                   ),
           );
-  }
-
-  String normalizeDate(DateTime? date) {
-    if (date != null) {
-      return DateFormat('d MMM y - H:m').format(date);
-    }
-    return "Error";
   }
 }

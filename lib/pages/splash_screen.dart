@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sms_read/pages/chat_screen_2.dart';
 import 'package:sms_read/utils/locator.dart';
 
 import '../core/permission_controller.dart';
@@ -29,11 +30,11 @@ class SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("FlutterSMSApp"),
+        title: const Text("All SMS(s)"),
         elevation: 0.7,
       ),
       body: permissionsGranted
-          ? const ChatScreen()
+          ? const ChatScreen2()
           : const Center(
               child: CircularProgressIndicator(),
             ),

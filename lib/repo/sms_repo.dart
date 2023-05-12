@@ -10,8 +10,8 @@ class SMSRepo {
     List<SmsMessage> smsList = await query.getAllSms;
     List<SmsModal> messageList = [];
 
-    smsList.sort((a, b) =>
-        dateTimeNullCheck(b.date).compareTo(dateTimeNullCheck(a.date)));
+    // smsList.sort((a, b) =>
+    //     dateTimeNullCheck(b.date).compareTo(dateTimeNullCheck(a.date)));
 
     for (SmsMessage sms in smsList) {
       SmsModal msg = SmsModal.convertSmsToMessage(sms);

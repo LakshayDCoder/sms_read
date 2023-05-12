@@ -9,10 +9,11 @@ import 'sms_controller.dart';
 
 class ChatRoomController {
   Future<List<ChatRoomModal>> createChatRooms() async {
-    List<SmsModal> allMessages =
-        await locator.get<SMSController>().getMessages();
     List<ContactModal> allContacts =
         await locator.get<ContactController>().getAllContacts();
+
+    List<SmsModal> allMessages =
+        await locator.get<SMSController>().getMessages();
 
     List<ChatRoomModal> allRooms = [];
 
@@ -28,14 +29,22 @@ class ChatRoomController {
 
         smsList.add(sms);
       } else {
-        ContactModal contact = allContacts
-            .firstWhere((element) => element.displayName == sms.name);
+        ContactModal contact = allContacts.firstWhere(
+            (element) => element.displayName == sms.name, orElse: () {
+          // The numer/address is not in our contacts
+          return ContactModal(
+            displayName: sms.name,
+          );
+        });
 
         ChatRoomModal room =
             ChatRoomModal(contactModal: contact, smsList: [sms]);
         allRooms.add(room);
       }
     }
+
+    allRooms.sort((room1, room2) =>
+        (room2.smsList.first.time).compareTo(room1.smsList.first.time));
 
     log("Total numbers of rooms found: ${allRooms.length}");
     return allRooms;
