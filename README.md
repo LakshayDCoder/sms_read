@@ -1,8 +1,11 @@
-# sms_read
+# SMS Fraud Detector
 
-A new Flutter project.
+This is a simple SMS viewing application.
+There are some predefined numbers that are set in the DB for now.
+When the user opens a chat with a number, that number is cross-checked in our database.
+If the number is registered in our database, it will show what is the threat level for the said contact & whether it is safe to continue chatting with them or not.
 
-## Getting Started
+## Demo
 
-Original Product
-https://github.com/limitedeternity/FlutterSMSApp/tree/master
+![Demo](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+![Not Safe Example](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
