@@ -7,5 +7,5 @@ If the number is registered in our database, it will show what is the threat lev
 
 ## Demo
 
-![Demo](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
-![Not Safe Example](https://github.com/Your_Repository_Name/Your_GIF_Name.gif)
+![Demo](https://github.com/LakshayDCoder/sms_read/blob/master/demo.gif)
+![Not Safe Example](https://github.com/LakshayDCoder/sms_read/blob/master/not_safe.jpg)
