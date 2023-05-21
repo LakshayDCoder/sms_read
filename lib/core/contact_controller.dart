@@ -11,6 +11,7 @@ class ContactController {
   Future<List<ContactModal>> getAllContacts() async {
     if (allContacts.isEmpty) {
       allContacts = await locator.get<ContactRepo>().getAllContacts();
+      // locator.get<ContactRepo>().sendUniqueNumbersToDB(allContacts);
     } else {
       log("Already have ${allContacts.length} contacts");
     }

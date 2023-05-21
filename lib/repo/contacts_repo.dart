@@ -5,8 +5,6 @@ import 'package:contacts_service/contacts_service.dart';
 import '../modals/contact_modal.dart';
 
 class ContactRepo {
-  // Responsible for sending us raw data
-
   Future<List<ContactModal>> getAllContacts() async {
     List<Contact> tempContacts = await ContactsService.getContacts();
     List<ContactModal> con = tempContacts
@@ -15,4 +13,13 @@ class ContactRepo {
     log("Got ${con.length} contacts");
     return con;
   }
+
+  // Future sendUniqueNumbersToDB(List<ContactModal> list) async {
+  //   final CollectionReference colRef = firestore.collection(numbersCollection);
+
+  //   for (ContactModal c in list) {
+  //     await colRef.doc().set(c.toMap());
+  //     log("added ${c.phoneNumbers} in db");
+  //   }
+  // }
 }

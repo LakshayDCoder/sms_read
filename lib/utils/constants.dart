@@ -9,3 +9,5 @@ String normalizeDate(DateTime? date) {
   }
   return "Error";
 }
+
+const String numbersCollection = "fraud_numbers";

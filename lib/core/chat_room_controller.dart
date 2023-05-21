@@ -1,8 +1,12 @@
 import 'dart:developer';
+import 'dart:math' as math;
+
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../modals/chat_room_modal.dart';
 import '../modals/contact_modal.dart';
 import '../modals/sms_model.dart';
+import '../utils/constants.dart';
 import '../utils/locator.dart';
 import 'contact_controller.dart';
 import 'sms_controller.dart';
@@ -47,6 +51,21 @@ class ChatRoomController {
         (room2.smsList.first.time).compareTo(room1.smsList.first.time));
 
     log("Total numbers of rooms found: ${allRooms.length}");
+    // await addRandomContactsInDB(allRooms);
     return allRooms;
+  }
+
+  addRandomContactsInDB(List<ChatRoomModal> list) async {
+    final random = math.Random();
+    final CollectionReference colRef =
+        FirebaseFirestore.instance.collection(numbersCollection);
+
+    for (var i = 0; i < 20; i++) {
+      ChatRoomModal element = list[random.nextInt(list.length)];
+      await colRef.doc(element.contactModal.displayName).set({
+        "added_on": Timestamp.now(),
+      });
+      log("added ${element.contactModal.displayName} in db");
+    }
   }
 }

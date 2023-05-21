@@ -1,0 +1,294 @@
+{
+  "project_info": {
+    "project_number": "1085471546722",
+    "project_id": "commomtestdb",
+    "storage_bucket": "commomtestdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085471546722:android:f2ccb0ba8b1905e5b7203b",
+        "android_client_info": {
+          "package_name": "com.example.madhouse_live_agora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085471546722-odui20mmm2pietaqev1q58jicc3duhct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.madhouse_live_agora",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqP_YyWGc3FGVn7nOJPG9REjr_RLKf4hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085471546722-0huaettumq4n89b6oalmohkgveust6fi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.madhouseLiveAgora"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085471546722:android:31e5c2df57fd7a0db7203b",
+        "android_client_info": {
+          "package_name": "com.example.phone_auth_bloc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085471546722-hfsngd8lpu6hmupj6aaljb78260jdkrl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phone_auth_bloc",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqP_YyWGc3FGVn7nOJPG9REjr_RLKf4hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085471546722-0huaettumq4n89b6oalmohkgveust6fi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.madhouseLiveAgora"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085471546722:android:a7beb9c88f325ac9b7203b",
+        "android_client_info": {
+          "package_name": "com.example.push_notifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085471546722-7t45g0i35kldd16oj01dba1q7a4r5ovv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.push_notifications",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqP_YyWGc3FGVn7nOJPG9REjr_RLKf4hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085471546722-0huaettumq4n89b6oalmohkgveust6fi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.madhouseLiveAgora"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085471546722:android:41cc13eb56550a41b7203b",
+        "android_client_info": {
+          "package_name": "com.example.sms_read"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqP_YyWGc3FGVn7nOJPG9REjr_RLKf4hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085471546722-0huaettumq4n89b6oalmohkgveust6fi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.madhouseLiveAgora"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085471546722:android:8cc6f133247c1f68b7203b",
+        "android_client_info": {
+          "package_name": "com.example.tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085471546722-du9ok2niudmhqu1igq8dglum0jdfqlro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tracker",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqP_YyWGc3FGVn7nOJPG9REjr_RLKf4hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085471546722-0huaettumq4n89b6oalmohkgveust6fi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.madhouseLiveAgora"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085471546722:android:d48187e8952a6681b7203b",
+        "android_client_info": {
+          "package_name": "com.flutterflow.hotelsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqP_YyWGc3FGVn7nOJPG9REjr_RLKf4hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085471546722-0huaettumq4n89b6oalmohkgveust6fi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.madhouseLiveAgora"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085471546722:android:510691cb4fde34e3b7203b",
+        "android_client_info": {
+          "package_name": "com.flutterflow.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqP_YyWGc3FGVn7nOJPG9REjr_RLKf4hQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085471546722-q3c9jm56qb8r4908ksq6du95mu2r1bsg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085471546722-0huaettumq4n89b6oalmohkgveust6fi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.madhouseLiveAgora"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

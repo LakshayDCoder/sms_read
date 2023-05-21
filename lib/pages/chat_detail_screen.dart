@@ -21,7 +21,7 @@ class _ChatDetailScreenState extends State<ChatDetailScreen> {
     super.initState();
     locator
         .get<CheckNumberController>()
-        .checkPhoneNumber(widget.roomModal.contactModal.displayName)
+        .isNumberSafe(widget.roomModal.contactModal.displayName)
         .then((value) {
       setState(() {
         isNumberSafe = value;
@@ -34,15 +34,21 @@ class _ChatDetailScreenState extends State<ChatDetailScreen> {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 234, 245, 230),
       appBar: AppBar(
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        title: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(widget.roomModal.contactModal.displayName),
+            const SizedBox(width: 10),
             if (!isNumberSafe)
               AnimatedContainer(
                 duration: const Duration(milliseconds: 500),
-                curve: Curves.easeIn,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                 child: const Text(
                   'Not Safe',
                   textAlign: TextAlign.start,
